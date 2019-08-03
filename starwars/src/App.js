@@ -1,7 +1,16 @@
 import React from 'react';
+import axios from "axios";
 import './App.css';
 
-const App = () => {
+funtion App() {
+  const [starPlayer, setStarPlayer] = useState("");
+  useEffect(() =>{
+    axios
+    .get("https://swapi.co/api/people/1/")
+    .then(res => setStarPlayer(res.data)
+  })
+    .catch(err => console.log(err));
+  },[]);
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 

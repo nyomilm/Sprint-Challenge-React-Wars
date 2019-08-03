@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a JS library that builds user interfaces for single-page applications by dividing UI into composable components. In class we used components like button and dropdown then created wrappeer components composed of those smaller components. After using, we have this one root component that is a component app.
+
 - [ ] What does it mean to _think_ in react?
+
+That means to think in components and component hierarchies.
 
 - [ ] Describe state.
 
+State is a variable in an application. We use the hook useState to keep track of a variable within a component. We initialize the state variable with a value.
+
 - [ ] Describe props.
 
+When we want to pass info held on state inside one component to another component, we pass is as props. We never make changes to props data, prop are read only.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effect is anything that affects something outside the scope of the function being executed. We sync our side effects by passing ina a dependency array as the second argument to the effect hook.
 
 ## Project Set Up
 
@@ -92,3 +102,4 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 <!--
 - [ ] Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
 -->
+NM
